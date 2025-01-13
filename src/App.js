@@ -14,15 +14,14 @@ function App() {
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
         <label>First Name:</label>
-        <input type="text" id="fname" value={firstName} onChange={(e) => setFirstName(e.target.value)}/><br/>
+        <input type="text" id="fname" value={firstName} required onChange={(e) => setFirstName(e.target.value)}/><br/>
         <label>Last Name:</label>
-        <input type="text" id="lname" value={lastName} onChange={(e) => setLastName(e.target.value)}/><br/>
+        <input type="text" id="lname" value={lastName} required onChange={(e) => setLastName(e.target.value)}/><br/>
         <button type="submit">Submit</button>
       </form>
       {fullName && (
         <div>
-          <label>Full Name:<span>{fullName}</span></label>
-          
+          <p>Full Name: <span> {fullName}</span></p>
         </div>
       )}
     </div>
