@@ -1,9 +1,9 @@
 import React, { use, useState } from "react";
 
 function App() {
-   const [firstName, setFirstName] = useState("");
-   const [lastName, setLastName] = useState("");
-   const [fullName, setFullName] = useState("");
+   const [firstName, setFirstName] = useState('');
+   const [lastName, setLastName] = useState('');
+   const [fullName, setFullName] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
