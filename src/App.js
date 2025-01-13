@@ -7,7 +7,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFullName(`${firstName} ${lastName}`);
+    setFullName(`Full Name: ${firstName} ${lastName}`);
   }
   return (
     <div>
@@ -19,11 +19,7 @@ function App() {
         <input type="text" id="lname" value={lastName} required onChange={(e) => setLastName(e.target.value)}/><br/>
         <button type="submit">Submit</button>
       </form>
-      {fullName && (
-        <div>
-          <p>Full Name: <span> {fullName}</span></p>
-        </div>
-      )}
+      {fullName && <p>{fullName}</p>}
     </div>
   );
 }
